@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/matthewrowley/.config/nvim'
+let g:netrw_dirhist_5='/home/matthewrowley/.config'
+let g:netrw_dirhist_4='/home/matthewrowley'
+let g:netrw_dirhist_3='/home/matthewrowley/Documents'
+let g:netrw_dirhist_2='/home/matthewrowley/Documents/Wiki'
+let g:netrw_dirhist_1='/home/matthewrowley/Documents/Wiki/Vim'
+let g:netrw_dirhist_0='/home/matthewrowley/Documents/Book_Quotes'
+let g:netrw_dirhist_9='/home/matthewrowley/Documents/Wiki/Vim'
+let g:netrw_dirhist_8='/home/matthewrowley/Documents/Wiki/DigitalReading'
+let g:netrw_dirhist_7='/home/matthewrowley/.config/nvim'
