@@ -69,6 +69,9 @@ keymap("n", "j", "gj", opts)
 -- Toggle nvim_tree file explorer
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- Toggle the Symbols Outline
+keymap("n", "<leader>s", ":SymbolsOutline<cr>", opts)
+
 -- Visual --
 -- Stay in indent mode while modifying indent
 keymap("v", "<", "<gv", opts)

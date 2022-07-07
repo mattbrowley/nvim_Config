@@ -3,7 +3,7 @@ HOME = os.getenv("HOME")
 
 local options = {
   fileencoding = "utf-8", -- Set file encoding to UTF-8
-  laststatus = 2, -- Always show the status line
+  laststatus = 2, -- Always show the status line change to 3 for one line across the whole screen
   cmdheight = 2, -- more space in the neovim command line for displaying messages
   number = true, -- Show the current line number
   relativenumber = true, -- Show the relative line numbers
@@ -64,5 +64,10 @@ vim.cmd [[set iskeyword+=-]]
 
 -- Register my vimwiki
 vim.cmd "let g:vimwiki_list =[{'path': '~/Documents/Wiki/', 'ext':'.wiki', 'index':'RowleyWiki', 'syntax':'default'}]"
+-- vim.g.vimwiki_list = "[{'path': '~/Documents/Wiki/', 'ext':'.wiki', 'index':'RowleyWiki', 'syntax':'default'}]"
 -- Do not register any .md files as wikis
 vim.cmd "let g:vimwiki_global_ext = 0"
+-- vim.g.vimwiki_global_ext = false
+
+-- set the cursorhold time to something that feels comfortable
+vim.g.cursorhold_updatetime = 200

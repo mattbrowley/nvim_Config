@@ -36,13 +36,15 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
 
   -- impatient should be called before all other plugins
-  -- use 'lewis6991/impatient.nvim' -- Pre-compile lua startup scripts for faster loading
+  use 'lewis6991/impatient.nvim' -- Pre-compile lua startup scripts for faster loading
 
   -- Temporary Plugins
   use 'ThePrimeagen/vim-be-good' -- Practice vim motions, etc. with games
 
   -- Aesthetic Vim plugins
-  use 'mhinz/vim-startify' -- Fancy start screen
+  -- use 'mhinz/vim-startify' -- Fancy start screen
+  use 'goolord/alpha-nvim' -- Fancy start screen
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use 'psliwka/vim-smoothie' -- Smooth scrolling
   use 'norcalli/nvim-colorizer.lua' -- Display colors rgb(25,100,95)
   use 'gruvbox-community/gruvbox' -- Colorscheme
@@ -53,6 +55,9 @@ return packer.startup(function(use)
   use 'akinsho/bufferline.nvim' -- List open buffers in order like tabs
   use 'moll/vim-bbye' -- provides :Bdelete command, which closes buffers without ever exiting vim
   use 'nvim-lualine/lualine.nvim' -- A fancy status line in lua
+  use "lukas-reineke/indent-blankline.nvim" -- show vertical rules to help with indentation
+  use 'mbpowers/nvimager' -- View images in-line
+  use 'sunjon/shade.nvim' -- Dim inactive windows
 
   -- General editing/utility Vim plugins
   use 'nvim-lua/popup.nvim'
@@ -69,7 +74,10 @@ return packer.startup(function(use)
   use 'numToStr/Comment.nvim' -- Comment or uncomment text objects (gcc)
   use 'JoosepAlviste/nvim-ts-context-commentstring' -- Comments in context
   use 'akinsho/toggleterm.nvim' -- toggle a floating terminal
-  use 'ahmedkhalf/project.nvim' -- Plugin for managing projects
+  -- use 'ahmedkhalf/project.nvim' -- Plugin for managing projects
+  use 'nvim-telescope/telescope-project.nvim' -- Manage projects within telescope
+  use 'rcarriga/nvim-notify' -- Log and access vim notifications easily
+  -- use 'folke/which-key.nvim' -- Dynamically reveal your keymaps
 
   -- Git-related plugins
   use 'lewis6991/gitsigns.nvim' -- All-in-one git plugin
@@ -86,6 +94,8 @@ return packer.startup(function(use)
   use 'neovim/nvim-lspconfig' -- Language Server for neovim
   use 'williamboman/nvim-lsp-installer' -- Easily install new LSP servers
   use 'jose-elias-alvarez/null-ls.nvim' -- inject external linting engines into lsp
+  -- use 'liuchengxu/vista.vim' -- Show project tags, etc in a separate pane
+  use 'simrat39/symbols-outline.nvim' -- Show project symbols in a separate pane
 
   -- Completion and Snippet plugins
   use 'hrsh7th/nvim-cmp' -- Asynchronous Lua Autocompletion
@@ -98,16 +108,17 @@ return packer.startup(function(use)
   use 'L3MON4D3/LuaSnip' -- Snippet engine implemented in Lua
   use 'saadparwaiz1/cmp_luasnip' -- Interface LuaSnip with cmp
   use 'rafamadriz/friendly-snippets' -- Collection of useful snippets
+  use 'molleweide/LuaSnip-snippets.nvim' -- More snippets from the community
 
   -- Other general coding plugins
-  use 'reinh/vim-makegreen' -- Run make and show the status with colors
-  use 'windwp/nvim-autopairs' -- Automatically handle bracket/parenthesis pairs
+  -- use 'reinh/vim-makegreen' -- Run make and show the status with colors
+  -- use 'windwp/nvim-autopairs' -- Automatically handle bracket/parenthesis pairs
 
   -- Other filetype plugins
   use 'vimwiki/vimwiki' -- Compose wikis in Vim
   use 'lervag/vimtex' -- Some LaTeX tools
-  use 'tpope/vim-rails' -- Suite of tools for editing Ruby on Rails programs
-  use 'rstacruz/sparkup' -- Tools to make writing html faster
+  -- use 'tpope/vim-rails' -- Suite of tools for editing Ruby on Rails programs
+  -- use 'rstacruz/sparkup' -- Tools to make writing html faster
   use 'stevearc/vim-arduino' -- Write and upload Arduino sketches
 
   -- Automatically set up your configuration after cloning packer.nvim

@@ -13,8 +13,12 @@ keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>Telescope treesitter<cr>", opts)
-keymap("n", "<leader>fp", "<cmd>Telescope projects<cr>", opts)
+keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fw", ":lua require('telescope.builtin').grep_string { search = vim.fn.expand('<cword>') }<CR>", opts)
+keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts)
+keymap("n", "<leader>fn",
+  "<Cmd>lua require('telescope').extensions.notify.notify({results_title='Notification History', prompt_title='Search Messages'})<CR>"
+  , opts)
 
 -- nnoremap <leader>ff <cmd>Telescope find_files<cr>
 -- nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -111,6 +115,7 @@ telescope.setup {
       filetypes = { "png", "webp", "jpg", "jpeg", "JPG" },
       find_cmd = "find", -- find command (defaults to `fd`)
     },
+    notify = {},
 
     -- Your extension configuration goes here:
     -- extension_name = {

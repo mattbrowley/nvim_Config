@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -88,6 +93,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/ack.vim",
     url = "https://github.com/mileszs/ack.vim"
+  },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
   },
   ["bufferline.nvim"] = {
     loaded = true,
@@ -149,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -158,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
-  },
-  ["nvim-autopairs"] = {
-    loaded = true,
-    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -183,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -209,6 +224,11 @@ _G.packer_plugins = {
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  nvimager = {
+    loaded = true,
+    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/nvimager",
+    url = "https://github.com/mbpowers/nvimager"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -234,10 +254,10 @@ _G.packer_plugins = {
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/restore_view.vim",
     url = "https://github.com/vim-scripts/restore_view.vim"
   },
-  sparkup = {
+  ["shade.nvim"] = {
     loaded = true,
-    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/sparkup",
-    url = "https://github.com/rstacruz/sparkup"
+    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/shade.nvim",
+    url = "https://github.com/sunjon/shade.nvim"
   },
   ["splitjoin.vim"] = {
     loaded = true,
@@ -284,25 +304,10 @@ _G.packer_plugins = {
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
   },
-  ["vim-makegreen"] = {
-    loaded = true,
-    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/vim-makegreen",
-    url = "https://github.com/reinh/vim-makegreen"
-  },
-  ["vim-rails"] = {
-    loaded = true,
-    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/vim-rails",
-    url = "https://github.com/tpope/vim-rails"
-  },
   ["vim-smoothie"] = {
     loaded = true,
     path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/vim-smoothie",
     url = "https://github.com/psliwka/vim-smoothie"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/matthewrowley/.local/share/nvim/site/pack/packer/start/vim-startify",
-    url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,

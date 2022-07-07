@@ -15,8 +15,16 @@ require "aesthetics.bufferline"
 require "aesthetics.lualine"
 require "coding.toggleterm"
 require "coding.project"
+require "coding.symbols"
 require "aesthetics.gitsigns"
+require "aesthetics.indentline"
+require "aesthetics.alpha"
+require "aesthetics.shade"
+require "snippets.luasnip"
+-- require "utility.whichkey" -- Need to review configuation before I use it
 
+-- plugins with default setup functions
+require 'notify'.setup()
 require 'colorizer'.setup()
 
 
